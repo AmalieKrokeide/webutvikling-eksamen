@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Companyname, services, signup">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."> 
+    <meta property="og:title" content="Companyname">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo1.png">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="Lorem ipsum dolor sit amet.">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="img/logo1.png" type="image/x-icon">
+    <title>Companyname</title>
 </head>
 <body>
-    
+    <div id="grid-container">
+        <header>
+            <!-- Bilde av logo er innhold på siden og fungerer som hjemknapp og kjennemerke. -->
+            <a href="index.html"><img class="logo" src="img/logo1.png" alt="iloceam pleam logo"></a>
+            <nav>
+                <ul id="nav">
+                    <li><a class="active-btn" href="index.html">Home</a></li>
+                    <li><a href="products.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#contact" class="yellow-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="index-page-header">
+                <div class="overlay"></div> <!-- Brukt youtube for å finne metode til overlay: https://www.youtube.com/watch?v=5CztcrXpfec -->
+                <!-- Video er pynt på siden. -->
+                <video autoplay loop muted aria-label="Parachuters in the blue sky."> 
+                    <source src="img/mountains.mp4">
+                </video>
+                <!-- Bildet er pynt på siden. -->
+                <img id="index-img" src="img/minimalistic-home-desk-design.jpg" alt="closeup workspace photo of mac, plant and pen on black table">
+                <article id="index-page-info">
+                    <h1>Compeling headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante purus, vehicula ut hendrerit nec, bibendum et justo. Curabitur varius erat tellus, ac porttitor odio elementum a. Sed orci ex, mollis sit amet imperdiet et, molestie pretium libero.</p>
+                    <a href="#our-services" class="yellow-btn">Read more about our services</a>
+                </article>
+            </section>
+            <section id="subheading">
+                <h2>Enganging subheading. What can you help your visitors with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante purus, vehicula ut hendrerit nec, bibendum et justo. Curabitur varius erat tellus, ac porttitor odio elementum a. Sed orci ex, mollis sit amet imperdiet et, molestie pretium libero. Etiam et facilisis magna. Aliquam rutrum justo ut ipsum bibendum tincidunt.</p>
+            </section>
+            <section id="about">
+                <!-- Bildet er pynt på siden. -->
+                <img src="https://placehold.co/400" alt="grå placeholder bilde">
+                <article id="about-info">
+                    <h3>About our company</h3>
+                    <p>Sed faucibus dui vel libero fringilla, a ultrices dui bibendum. In laoreet mauris eget enim tincidunt condimentum. Cras quis ullamcorper ligula, eget viverra orci. Etiam consectetur fringilla massa. Sed odio justo, interdum in dapibus sed, malesuada sit amet sapien. Sed aliquet orci quis massa porta consequat.Sed faucibus dui vel libero fringilla, a ultrices dui bibendum. In laoreet mauris eget enim tincidunt condimentum. Cras quis ullamcorper ligula, eget viverra orci. Etiam consectetur fringilla massa. Sed odio justo, interdum in dapibus sed, malesuada sit amet sapien. Sed aliquet orci quis massa porta consequat.</p>
+                    <a href="about.html" class="clear-btn">Read more about us</a>
+                </article>
+            </section>
+            <section class="our-services" itemscope itemtype=https://schema.org/Service>
+                <h4>Our Services</h4>
+                <article itemprop="serviceType">
+                    <i class="fa-solid fa-users-line fa-3x"></i>
+                    <h5>Branding</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article itemprop="serviceType">
+                    <i class="fa-solid fa-cloud-arrow-up fa-3x"></i>
+                    <h5>Branding</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article itemprop="serviceType">
+                    <i class="fa-solid fa-left-right fa-3x"></i>
+                    <h5>Branding</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article itemprop="serviceType">
+                    <i class="fa-solid fa-wifi fa-3x"></i>
+                    <h5>Branding</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+            </section>
+            <section id="signup-newsletter" itemscope itemtype="https://schema.org/SubscribeAction">
+                <h6>Sign up for our newsletter</h6>
+                <form action="#" role="form" method="post" aria-label="email sign up" itemprop="object">
+                    <input title="Write your email" type="email" id="email" aria-label="email" name="email" maxlength="50" placeholder="Nora@epost.no" required>
+                    <input type="submit" aria-label="button" value="Sign me up!" class="yellow-btn">
+                </form>
+            </section>
+            <section class="scroll-up-btn" title="Scroll to top">
+                <a href="#"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+            </section>
+        </main>
+        <footer>
+            <!-- Bilde av logo er innhold på siden og fungerer som hjemknapp og kjennemerke. -->
+            <a href="index.html"><img class="logo" src="img/logo1.png" alt="iloceam pleam logo"></a>
+            <h6>Companyrights Companyname 2023</h6>
+            <section id="some-icons">
+                <a href="https://www.facebook.com/" target="_blank" class="some-icons"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="some-icons"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://no.linkedin.com/" target="_blank" class="some-icons"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
