@@ -18,11 +18,11 @@
     <link rel="icon" href="img/logo1.png" type="image/x-icon">
     <title>Portfolio Companyname</title>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Organization">
     <div id="grid-container">
         <header>
             <!-- Bilde av logo er innhold på siden og fungerer som hjemknapp og kjennemerke. -->
-            <a href="index.html"><img class="logo" src="img/logo1.png" alt="iloceam pleam logo"></a>
+            <a href="index.html"><img itemprop="logo" itemscope itemtype="https://schema.org/ImageObject" class="logo" src="img/logo1.png" alt="iloceam pleam logo"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -39,13 +39,13 @@
                 <img src="img/minimalistic-home-desk-design.jpg" alt="closeup workspace photo of mac, plant and pen on black table">
                 <h1>Portfolio</h1>
             </section>
-            <section id="products-nav">
+            <section id="products-nav" itemprop="hasOfferCatalog">
                 <h2>Explore previous jobs</h2>
                 <hr>
                 <nav id="products-nav-btn">
-                    <a href="#branding" class="clear-btn">Branding</a>
-                    <a href="#design" class="clear-btn">Design</a>
-                    <a href="#development" class="clear-btn">Development</a>
+                    <a itemprop="makesOffer" href="#branding" class="clear-btn">Branding</a>
+                    <a itemprop="makesOffer" href="#design" class="clear-btn">Design</a>
+                    <a itemprop="makesOffer" href="#development" class="clear-btn">Development</a>
                 </nav>
             </section>
             <!-- Bildene i seksjonene under skal være innhold på siden og referere til tidligere arbeid. -->
